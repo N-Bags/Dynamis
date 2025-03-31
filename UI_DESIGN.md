@@ -344,4 +344,8 @@
    - Unified interface
    - Seamless workflows
    - Data consistency
-   - System automation 
+   - System automation
+
+=== Checking Running Containers ===
+Current Docker containers status:
+[container status details] 

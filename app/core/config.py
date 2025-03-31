@@ -1,6 +1,6 @@
 from typing import Optional
 from pydantic_settings import BaseSettings, SettingsConfigDict
-from pydantic import PostgresDsn, RedisDsn, EmailStr
+from pydantic import PostgresDsn, EmailStr
 
 
 class Settings(BaseSettings):
@@ -16,7 +16,22 @@ class Settings(BaseSettings):
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
 
     # Database
-    DATABASE_URL: PostgresDsn
+    DB_HOST: str
+    DB_PORT: int
+    DB_USER: str
+    DB_PASSWORD: str
+    DB_NAME: str
+
+    @property
+    def DATABASE_URL(self) -> PostgresDsn:
+        return PostgresDsn.build(
+            scheme="postgresql",
+            username=self.DB_USER,
+            password=self.DB_PASSWORD,
+            host=self.DB_HOST,
+            port=self.DB_PORT,
+            path=self.DB_NAME
+        )
 
     # AWS
     AWS_ACCESS_KEY_ID: Optional[str] = None
@@ -32,9 +47,6 @@ class Settings(BaseSettings):
     SMTP_PORT: int = 587
     SMTP_USER: EmailStr
     SMTP_PASSWORD: str
-
-    # Redis
-    REDIS_URL: RedisDsn
 
     model_config = SettingsConfigDict(
         env_file=".env",
