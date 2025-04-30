@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dynamis
 
-## Getting Started
+**Dynamis** is an AI-powered business operating system that integrates modern frontend architecture with real-time automation, clean UI, and human-in-the-loop AI functionality.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Features
+
+- 🧠 Floating AI Assistant (Echo) on every page  
+- 📊 Dashboard with live system data and revenue  
+- 📟 CRM with client logging, tagging, and quick actions  
+- ✅ Task manager with filtering, subtasks, and scheduling  
+- 🗕 Calendar UI (event grid coming soon)  
+- 💰 Finances overview with exportable reports  
+- 🔌 API integration hub (HubSpot, Zoho, QuoteIQ)  
+- ⚙️ Settings (dark mode, preferences, notifications)  
+- 👤 Profile view with role summary and recent activity  
+
+---
+
+## 🛠 Tech Stack
+
+- Next.js 15.2 (App Router)  
+- React 19.1  
+- TailwindCSS 4.1  
+- TypeScript 5.8  
+- ESLint 9.24  
+- Lucide Icons  
+
+---
+
+## 💻 Dev Environment
+
+- Dev environment: **WSL (Ubuntu)** using Cursor.dev  
+- Package manager: `npm`  
+- Runs locally at `http://localhost:3001`  
+
+---
+
+## 🧹 Project Structure
+
+```
+src/
+├── app/
+│   ├── dashboard/
+│   ├── crm/
+│   ├── tasks/
+│   ├── calendar/
+│   ├── finances/
+│   ├── integrations/
+│   ├── settings/
+│   ├── profile/
+│   └── layout.tsx
+├── components/           # NavDropdown, Sidebar, Echo
+└── styles/               # Tailwind + global
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚙️ Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+git clone https://github.com/N-Bags/Dynamis.git
+cd Dynamis/Frontend
+npm install
+npm run dev
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🦪 Testing & QA
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- ✅ Vitest unit + integration tests coming soon  
+- ✅ Lighthouse audits planned  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## ✨ Future Plans
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Mobile sidebar collapse  
+- Echo autocomplete command palette  
+- Server actions + backend integration  
+- Role-based access  
+- Theming polish 

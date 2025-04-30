@@ -1,31 +1,29 @@
 {
-  "name": "frontend",
+  "name": "dynamis-frontend",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --port 3001",
+    "dev": "next dev -p 3001",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 3001",
     "lint": "next lint"
   },
   "dependencies": {
-    "lucide-react": "^0.487.0",
-    "next": "^15.2.4",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "react-icons": "^5.5.0"
+    "next": "15.2.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "lucide-react": "latest",
+    "tailwindcss": "4.1.0",
+    "typescript": "5.8.0"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.1",
-    "@tailwindcss/postcss": "^4.1.3",
-    "@types/node": "^22.14.0",
-    "@types/react": "^19.1.0",
-    "@types/react-dom": "^19.1.1",
-    "autoprefixer": "^10.4.21",
-    "eslint": "^9.24.0",
-    "eslint-config-next": "15.2.4",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^4.1.3",
-    "typescript": "^5.8.3"
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "autoprefixer": "latest",
+    "eslint": "9.24.0",
+    "eslint-config-next": "latest",
+    "postcss": "latest",
+    "prettier": "latest"
   }
-}
+} 

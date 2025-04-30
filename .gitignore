@@ -3,3 +3,10 @@ node_modules
 __pycache__
 *.log
 .env 
+
+# Node & Build
+.next/
+out/
+.vercel/
+*.tsbuildinfo
+.DS_Store 
