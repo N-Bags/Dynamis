@@ -12,18 +12,19 @@
     "next": "15.2.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "lucide-react": "latest",
     "tailwindcss": "4.1.0",
+    "lucide-react": "0.487.0",
     "typescript": "5.8.0"
   },
   "devDependencies": {
-    "@types/node": "latest",
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
-    "autoprefixer": "latest",
-    "eslint": "9.24.0",
-    "eslint-config-next": "latest",
-    "postcss": "latest",
-    "prettier": "latest"
+    "@tailwindcss/postcss": "^1.0.0",
+    "@types/node": "^20.4.0",
+    "@types/react": "^18.2.7",
+    "@types/react-dom": "^18.2.4",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^9.24.0",
+    "eslint-config-next": "15.2.4",
+    "postcss": "^8.4.21",
+    "prettier": "^3.2.5"
   }
 } 
